@@ -22,7 +22,7 @@ wlan.active(True)
 # Start connection
 wlan.connect(ssid, password)
 
-# Wait for conection
+# Wait for connection
 while wlan.isconnected() == False:
     print("Waiting for connection...")
     sleep(1)
@@ -34,8 +34,16 @@ print("Connected\n")
 print("IP address:", wlan.ifconfig()[0])
 print("Subnet mask:", wlan.ifconfig()[1])
 print("Gateway mask:", wlan.ifconfig()[2])
-print("DNS Server:", wlan.ifconfig()[3])
+print("DNS Server:", wlan.ifconfig()[3], "\n")
 
 # Disconnect from WLAN
 wlan.disconnect()
+
+# Wait for disconnection
+while wlan.isconnected() == True:
+    print("Waiting for disconnection...")
+    sleep(1)
+
+# Disconnected
+print("Disconnected\n")
 ```
