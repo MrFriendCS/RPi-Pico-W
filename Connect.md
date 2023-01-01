@@ -8,7 +8,6 @@ Use MicroPython on PRi Pico W to connect to WLAN.
 # Import modules
 import network
 from time import sleep
-import machine
 
 # Wireless network details
 ssid = "networkName"
@@ -20,14 +19,15 @@ wlan = network.WLAN(network.STA_IF)
 # Ensure interface is active
 wlan.active(True)
 
-# Connect to network
+# Start connection
 wlan.connect(ssid, password)
 
 # Wait for conection
 while wlan.isconnected() == False:
     print("Waiting for connection...")
     sleep(1)
-    
+
+# Connected
 print("Connected\n")
 
 # IP-level network interface parameters
