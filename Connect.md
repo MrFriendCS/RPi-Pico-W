@@ -1,6 +1,6 @@
 # Connect to WLAN
 
-Use MicroPython on PRi Pico W to connect to WLAN.
+Use MicroPython on RPi Pico W to connect to WLAN.
 
 ## Code
 
