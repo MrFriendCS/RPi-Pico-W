@@ -1,6 +1,6 @@
 # Scan for Network(s)
 
-Use MicroPython on PRi Pico W to scan for network(s).
+Use MicroPython on RPi Pico W to scan for network(s).
 
 ## Code
 
