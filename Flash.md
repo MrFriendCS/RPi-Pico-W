@@ -1,6 +1,6 @@
 # Flash Pico W LED
 
-Use MicroPython on RPi Pico W flash the green LED.
+Use MicroPython on RPi Pico W to flash the green LED.
 
 ## Code
 
